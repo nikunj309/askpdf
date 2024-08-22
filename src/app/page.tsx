@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import Image from 'next/image'
-
+import { HardHat } from 'lucide-react';
 export default function Home() {
   return (
     <>
@@ -52,17 +52,33 @@ export default function Home() {
           </div>
 
           <div>
-            <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+            {/* <div className='mx-auto max-w-6xl px-6 lg:px-8'>
               <div className='mt-16 flow-root sm:mt-24'>
                 <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
                   <Image
-                    src='/dashboard-preview.jpg'
+                    src='/'
                     alt='product preview'
                     width={1364}
                     height={866}
                     quality={100}
                     className='rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'
                   />
+                  <p className='w-full h-[566px]  flex items-center justify-center rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'>
+                    Under Construction
+                  </p>
+                </div>
+              </div>
+            </div> */}
+            <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+              <div className='mt-16 flow-root sm:mt-24'>
+                <div className='-m-2 rounded-xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
+                  <div className='w-full h-[566px] flex flex-col items-center justify-center rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'>
+                    <div className='flex flex-col items-center'>
+                      <HardHat className='w-16 h-16 text-yellow-500 mb-4' />
+                      <p className='text-4xl font-serif font-semibold text-gray-700'>Under Construction</p>
+                      <p className='text-lg font-mono font-semibold text-gray-700'>Product Preview</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -148,7 +164,7 @@ export default function Home() {
           </li>
         </ol>
 
-        <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+        {/* <div className='mx-auto max-w-6xl px-6 lg:px-8'>
           <div className='mt-16 flow-root sm:mt-24'>
             <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
               <Image
@@ -162,7 +178,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+              <div className='mt-16 flow-root sm:mt-24'>
+                <div className='-m-2 rounded-xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
+                  <div className='w-full h-[566px] flex flex-col items-center justify-center rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'>
+                    <div className='flex flex-col items-center'>
+                      <HardHat className='w-16 h-16 text-yellow-500 mb-4' />
+                      <p className='text-4xl font-serif font-semibold text-gray-700 '>Under Construction</p>
+                      <p className='text-lg font-mono font-semibold text-gray-700'>Product Preview</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            
     </>
   )
 }
